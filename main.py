@@ -37,7 +37,7 @@ async def on_message(message):
             ]
 
             response = random.choice(lines)
-            await message.channel.send(response)
+            await message.reply(response)
     except Exception as e:
         print(e)
     
