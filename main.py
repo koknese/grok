@@ -14,7 +14,10 @@ client = commands.Bot(command_prefix=commands.when_mentioned_or("!"), intents=in
 
 @client.event
 async def on_ready():
-    print("The bot has successfully started.")
+        activeservers = client.guilds
+        print("The bot has successfully started.")
+        for guild in activeservers:
+            print(f"I reside in: {guild.name}")   
 
 @client.event
 async def on_message(message):
