@@ -53,7 +53,7 @@ async def on_message(message):
                 f"https://tenor.com/view/1blocked-message-discord-meme-troll-brick-wall-gif-23392632",
                 f"https://cdn.discordapp.com/attachments/977196983573938208/1265730710631878777/ben-shapiro-morgan-freeman-true.gif?ex=684d1055&is=684bbed5&hm=1f4da98290d201666aa74b6c52aa696893ec2c7e8bd6978d1886e347536d8b92&",
                 f"uhhh... kill the boer?",
-                f"uhh... kill {message.author}?",
+                f"uhh... kill {message.author.display_name}?",
                 f'"{str(mockText(message.clean_content))}"\n girl sybau :sob:',
                 f'\"erm, {message.clean_content} :nerd:\" bro SHUT UP you\'re weird',
                 f"make me.",
