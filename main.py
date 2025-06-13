@@ -102,6 +102,7 @@ async def on_message(message):
                     f"THE MODERATORS ARE PUTTING CHEMICALS IN THE MESSAGES THAT MAKE THE SERVER GAY! UGH! THE SERVER\'S GAY! AND THE MESSAGES ARE WHITE, SO IT\'S RACIST!",
                     f"{randomWord}? i barely know 'er!",
                     f"# what if grok had whatsapp :rofl:\n{message.author}: {message.clean_content}\nFather Elon: i NEED right wing propaganda\nrealdonaldtrump: grok give me an equation for creating a tarriff system\nHouthi PC small group: Great job team!",
+                    f"https://media.discordapp.net/attachments/995018479394627674/1343615076082520165/caption.gif?ex=684d9e0d&is=684c4c8d&hm=9862051bfa3fc04ae2dc4c9cbc9b7582d505a497be9780634a846d6d2eab1430&=&width=1161&height=1000",
                 ],
 
                 "file": [
