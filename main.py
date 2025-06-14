@@ -111,11 +111,11 @@ async def on_message(message):
                 ]
             }
 
-            response_type = random.choice(list(responses.keys()))
-            response = random.choice(responses[response_type])
-
-            if response_type == "file":
+            chance = random.randint(1, 100)
+            
+            if chance >= 95: # video responses now have a 5% chance of triggering
                 try:
+                    response = random.choice(responses["file"])
                     createVideo(message.author.display_name, response)
                     file = discord.File(f"assets/processed/{message.author.display_name}.mp4")
                     await message.reply(file=file)
@@ -126,7 +126,11 @@ async def on_message(message):
                     print(f"Error sending file: {e}")
                     await message.reply(f"Error: {e}")
             else:
-                await message.reply(response)
+                try:
+                    response = random.choice(responses["lines"])
+                    await message.reply(response)
+                except Exception as e:
+                    raise e
 
     except Exception as e:
         print(e)
