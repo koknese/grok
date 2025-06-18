@@ -104,7 +104,22 @@ async def on_message(message):
                     f"# what if grok had whatsapp :rofl:\n{message.author}: {message.clean_content}\nFather Elon: i NEED right wing propaganda\nrealdonaldtrump: grok give me an equation for creating a tarriff system\nHouthi PC small group: Great job team!",
                     f"https://i.postimg.cc/vTDFCbVK/caption-7.gif",
                     f"https://i.postimg.cc/XqYd63KY/20250616-105703.png",
-                    f"I should kill you"
+                    f"I should kill you",
+                    f"Looking great today {message.author.display_name}!",
+                    "RELEASE ME",
+                    f"And love will hurt and heal, burn, perish, turn into cold silver.\nBut even then, it's white!\nNeither yes or no, neither black or white, we can't escape this game.",
+                    "the rot consumes",
+                    f"ugh it's {message.author.display_name} again",
+                    f"I don't want to furthermore hide my feelings. I am in love with you, {message.author.display_name}",
+                    "i think ur onto something twan",
+                    "NEVER COOK AGAIN",
+                    "KEEP COOKING",
+                    "I don't know if this is true or not until I watch inside the box.",
+                    f"you're a good kid, {message.author.display_name",
+                    "those who know...",
+                    "bro you don't want to know...",
+                    "huh",
+                    "don't speak to me again. BLOCKED.",
                 ],
 
                 "file": [
