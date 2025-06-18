@@ -148,7 +148,7 @@ async def on_message(message):
             else:
                 try:
                     response = random.choice(responses["lines"])
-                    print(message.content)
+                    print(f"{message.author.name}: {message.content}")
                     await message.reply(response)
                 except Exception as e:
                     raise e
