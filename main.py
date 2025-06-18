@@ -93,7 +93,7 @@ async def on_message(message):
                     f"https://tenor.com/view/what-why-havent-we-killed-this-mf-kill-this-mf-kill-this-guy-ban-this-guy-mf-die-gif-18236210805183010444",
                     f"https://tenor.com/view/who-gives-a-shit-leonardo-di-caprio-who-cares-gif-15948296",
                     f"https://tenor.com/view/1blocked-message-discord-meme-troll-brick-wall-gif-23392632",
-                    f"https://cdn.discordapp.com/attachments/977196983573938208/1265730710631878777/ben-shapiro-morgan-freeman-true.gif?ex=684d1055&is=684bbed5&hm=1f4da98290d201666aa74b6c52aa696893ec2c7e8bd6978d1886e347536d8b92&",
+                    f"https://i.postimg.cc/3NVLxDLg/ben-shapiro-morgan-freeman-true.gif",
                     f"uhhh... kill the boer?",
                     f"uhh... kill {message.author.display_name}?",
                     f'"{str(mockText(message.clean_content))}"\n girl sybau :sob:',
