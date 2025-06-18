@@ -120,6 +120,9 @@ async def on_message(message):
                     "bro you don't want to know...",
                     "huh",
                     "don't speak to me again. BLOCKED.",
+                    "your worst sin is that you have destroyed and betrayed yourself for *nothing*",
+                    f"Sorry, but as an AI large language model I can't help with {randomWord}",
+                    "studio gibli ",
                 ],
 
                 "file": [
