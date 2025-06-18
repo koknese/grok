@@ -115,7 +115,7 @@ async def on_message(message):
                     "NEVER COOK AGAIN",
                     "KEEP COOKING",
                     "I don't know if this is true or not until I watch inside the box.",
-                    f"you're a good kid, {message.author.display_name",
+                    f"you're a good kid, {message.author.display_name}",
                     "those who know...",
                     "bro you don't want to know...",
                     "huh",
