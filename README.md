@@ -20,3 +20,5 @@ By adding Grok to your server, the following data may be collected:
 - contents of messages sent to Grok
 
 Data will be used only for interest purposes and ideas for new responses.
+
+No data is being sold or shared with third parties.
