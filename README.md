@@ -17,7 +17,7 @@ Run with `python main.py`
 # Privacy policy
 By adding Grok to your server, the following data may be collected:
 - name of the server
-- contents of messages sent to Grok
+- contents and authors of messages sent to Grok
 
 Data will be used only for interest purposes and ideas for new responses.
 
