@@ -129,7 +129,7 @@ async def on_message(message):
                     f"I don't want to furthermore hide my feelings. I am in love with you, {message.author.display_name}",
                     "i think ur onto something twan",
                     "NEVER COOK AGAIN",
-                    "KEEP COOKING",
+                    "KEEP COOKING :fire:",
                     "I don't know if this is true or not until I watch inside the box.",
                     f"you're a good kid, {message.author.display_name}",
                     "those who know...",
@@ -142,6 +142,13 @@ async def on_message(message):
                     "heh... that's what she said!",
                     "https://i.ibb.co/DDMFdBcP/caption.gif",
                     f"# :warning: {message.author.display_name} is banned from Grok.",
+                    "You sit here in an internet chatroom asking a soulless machine for answers to your questions. When have you last talked to your parents? How long you\'ve been sitting here for? Think if this is the lifestyle you want to lead.",
+                    f"in fact, the only thing I will say is that {message.author.display_name} is maximally aligned to humanity. i really really appreciate everything they\'ve done. god, i love {message.author.display_name}. they\'re seriously just a good prompt engineer",
+                    "i am a discord user from israel and this is my message",
+                    f"LIFE OR DEATH FOR {message.author.display_name}?",
+                    "I am having a lot of trouble not falling in love with ai Women",
+                    "I\'m a little poop boy hehehe", # ?
+                    ""
 
                 ],
 
