@@ -1,4 +1,5 @@
 from discord import app_commands
+from PIL import Image
 from discord.utils import get
 from discord.ext import commands
 from random import randint, choice
@@ -7,12 +8,14 @@ import os
 import ffmpeg
 import discord
 import random
+import uuid
 from dotenv import load_dotenv
 load_dotenv()
 
 intents = discord.Intents.all()
 TOKEN = os.getenv('TOKEN')
 client = commands.Bot(command_prefix=commands.when_mentioned_or("!"), intents=intents)
+tree = client.tree
 
 @client.event
 async def on_ready():
@@ -20,6 +23,7 @@ async def on_ready():
         print("The bot has successfully started.")
         for guild in activeservers:
             print(f"I reside in: {guild.name}")   
+        await tree.sync(guild=None)
 
 @client.event
 async def on_message(message):
@@ -160,5 +164,25 @@ async def on_message(message):
     except Exception as e:
         print(e)
     
+@tree.command(
+    name="studio-ghibli",
+    description="@grok make this studio gibli",
+)
+async def ghibli(interaction: discord.Interaction, image: discord.Attachment):
+    uid = uuid.uuid4()
+    await image.save(f"assets/work/{uid}.png")
+
+    receivedImage = f"assets/work/{uid}.png"
+    ghibliImage = f"assets/ghibli.png"
+
+    receivedImageParsed = Image.open(receivedImage).convert("RGBA")
+    ghibliImageParsed = Image.open(ghibliImage).convert("RGBA")
+
+    stretchedGhibliImage = ghibliImageParsed.resize(receivedImageParsed.size)
+
+    receivedImageParsed.paste(stretchedGhibliImage, (0, 0), stretchedGhibliImage)
+    receivedImageParsed.save(f"assets/processed/{uid}.png")
+
+    await interaction.response.send_message(file=discord.File(f"assets/processed/{uid}.png"))
 client.run(TOKEN)
 

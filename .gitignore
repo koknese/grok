@@ -1,3 +1,4 @@
 .env
+.env.prod
 assets/processed/*
 assets/work/*
