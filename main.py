@@ -123,6 +123,7 @@ async def on_message(message):
                     "your worst sin is that you have destroyed and betrayed yourself for *nothing*",
                     f"Sorry, but as an AI large language model I can't help with {randomWord}",
                     "studio gibli ",
+                    "heh... that's what she said!",
                 ],
 
                 "file": [
