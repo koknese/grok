@@ -5,17 +5,28 @@ from discord.ext import commands
 from random import randint, choice
 from gtts import gTTS
 import os
+import time
+import schedule
 import ffmpeg
 import discord
 import random
+import glob
 import uuid
 from dotenv import load_dotenv
 load_dotenv()
+
 
 intents = discord.Intents.all()
 TOKEN = os.getenv('TOKEN')
 client = commands.Bot(command_prefix=commands.when_mentioned_or("!"), intents=intents)
 tree = client.tree
+
+def deleteTmp():
+    print("deleteTmp:: Deleting tmp folders...")
+
+    for dir in ['assets/work', 'assets/processed']:
+            for f in os.listdir(dir):
+                os.remove(os.path.join(dir, f))
 
 @client.event
 async def on_ready():
@@ -24,6 +35,7 @@ async def on_ready():
         for guild in activeservers:
             print(f"I reside in: {guild.name}")   
         await tree.sync(guild=None)
+        deleteTmp()
 
 @client.event
 async def on_message(message):
@@ -169,20 +181,23 @@ async def on_message(message):
     description="@grok make this studio gibli",
 )
 async def ghibli(interaction: discord.Interaction, image: discord.Attachment):
-    uid = uuid.uuid4()
-    await image.save(f"assets/work/{uid}.png")
+    try:
+        uid = uuid.uuid4()
+        await image.save(f"assets/work/{uid}.png")
 
-    receivedImage = f"assets/work/{uid}.png"
-    ghibliImage = f"assets/ghibli.png"
+        receivedImage = f"assets/work/{uid}.png"
+        ghibliImage = f"assets/ghibli.png"
 
-    receivedImageParsed = Image.open(receivedImage).convert("RGBA")
-    ghibliImageParsed = Image.open(ghibliImage).convert("RGBA")
+        receivedImageParsed = Image.open(receivedImage).convert("RGBA")
+        ghibliImageParsed = Image.open(ghibliImage).convert("RGBA")
 
-    stretchedGhibliImage = ghibliImageParsed.resize(receivedImageParsed.size)
+        stretchedGhibliImage = ghibliImageParsed.resize(receivedImageParsed.size)
 
-    receivedImageParsed.paste(stretchedGhibliImage, (0, 0), stretchedGhibliImage)
-    receivedImageParsed.save(f"assets/processed/{uid}.png")
+        receivedImageParsed.paste(stretchedGhibliImage, (0, 0), stretchedGhibliImage)
+        receivedImageParsed.save(f"assets/processed/{uid}.png")
 
-    await interaction.response.send_message(file=discord.File(f"assets/processed/{uid}.png"))
+        await interaction.response.send_message(file=discord.File(f"assets/processed/{uid}.png"))
+    except Exception as e:
+        await interaction.response.send_message(f"# :warning: GROK AI TRACEBACK :warning:\n-# In DOGE we trvst\nAn unexpected error occured. Traceback:\n`{e}`\n If you believe this wasn\'t a user error, report it in https://github.com/koknese/grok", ephemeral=True)
+
 client.run(TOKEN)
-

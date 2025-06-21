@@ -9,6 +9,8 @@ Pip dependencies:
 `python-dotenv`
 `python-ffmpeg`
 `gtts`
+`pillow`
+`schedule`
 
 Fill out .env in accordance with .env.sample
 
