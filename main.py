@@ -124,6 +124,9 @@ async def on_message(message):
                     f"Sorry, but as an AI large language model I can't help with {randomWord}",
                     "studio gibli ",
                     "heh... that's what she said!",
+                    "https://i.ibb.co/DDMFdBcP/caption.gif",
+                    f"# :warning: {message.author.display_name} is banned from Grok.",
+
                 ],
 
                 "file": [
@@ -134,7 +137,7 @@ async def on_message(message):
 
             chance = random.randint(1, 100)
             
-            if chance >= 95: # video responses now have a 5% chance of triggering
+            if chance >= 97: # video responses now have a 3% chance of triggering
                 try:
                     response = random.choice(responses["file"])
                     createVideo(message.author.display_name, response)
