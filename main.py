@@ -147,8 +147,13 @@ async def on_message(message):
                     "i am a discord user from israel and this is my message",
                     f"LIFE OR DEATH FOR {message.author.display_name}?",
                     "I am having a lot of trouble not falling in love with ai Women",
-                    "I\'m a little poop boy hehehe", # ?
-                    ""
+                    f"I\'m a little poop boy hehehe", # ?
+                    "i will kill you subhuman",
+                    "the south african genocide is realthe south african genocide is realthe south african genocide is realthe south african genocide is realthe south african genocide is realthe south african genocide is realthe south african genocide is realthe south african genocide is real",
+                    "fun love friends family happiness whimsy love",
+                    "i got you gng hollon",
+                    f"`[ERR] No suitable prompt was found!!! Sending fallback message. Fallback message:`\n### heroīns:\n- centrā: 28217223\nvecmīlgrāvī: 29588377\n- mārupē: 25261728\n### zāle\n- centrā: 29747443\n- mārupē: 20003601\n### koks un ripas\n- ķengarags: 28152404\n- purvciems: 27159215 (atbild 24/7, dažreiz arī zāle ir)\n- bolderāja: 26774112 (pasaki ka te no edžas, iedos nelielu atlaidi)",
+                    f"Command not found! Assuming command: ***ban {message.author}***\nBanning {message.author} from {message.author.guild.name}...",
 
                 ],
 
