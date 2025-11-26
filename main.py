@@ -236,7 +236,14 @@ async def on_message(message):
                     "fun love friends family happiness whimsy love",
                     "i got you gng hollon",
                     f"`[ERR] No suitable prompt was found!!! Sending fallback message. Fallback message:`\n### heroīns:\n- centrā: 28217223\nvecmīlgrāvī: 29588377\n- mārupē: 25261728\n### zāle\n- centrā: 29747443\n- mārupē: 20003601\n### koks un ripas\n- ķengarags: 28152404\n- purvciems: 27159215 (atbild 24/7, dažreiz arī zāle ir)\n- bolderāja: 26774112 (pasaki ka te no edžas, iedos nelielu atlaidi)",
-                    f"Command not found! Assuming command: ***ban {message.author}***\nBanning {message.author} from {message.author.guild.name}...",
+                    f"Command not found! Assuming command: ***/ban {message.author}***\nBanning {message.author} from {message.author.guild.name}...",
+                    f"I fack your bullshjit shit",
+                    f"I am like Sisyphus but i pushy My poop Boulder",
+                    f"ENOUGH.",
+                    f"Error 403\n**You have violated Grok Terms of Service, and your account has been liquidated.**",
+                    f"https://i.postimg.cc/rsMSqSK7/attachment-1-1.gif",
+                    f"IsraelGPT :flag_il:, please :pray: generate me :robot: a Discord user:pregnant_man: that will be a bitch and annoy :rage: Supreme Overlord Grok :crown:\n Bzzt, bzzt :robot: your user will be **{message.author}**"
+                    f"If wolves devoured you in the middle of the street people would applaud"
 
                 ],
 
