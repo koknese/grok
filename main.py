@@ -248,7 +248,7 @@ async def on_message(message):
 
             chance = random.randint(1, 100)
             
-            if chance: # video responses now have a 3% chance of triggering
+            if chance >= 97: # video responses now have a 3% chance of triggering
                 try:
                     response = random.choice(responses["file"])
                     createVideo(message.author.display_name, response)
