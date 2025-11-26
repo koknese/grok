@@ -6,8 +6,8 @@ from random import randint, choice
 from gtts import gTTS
 import os
 import time
-import schedule
 import ffmpeg
+import schedule
 import discord
 import random
 import glob
@@ -137,21 +137,28 @@ async def on_message(message):
 
             def combineAudioVideo(targetUser, video, audio):
                 print("combineAudioVideo:: Combining audio & video...")
-    
+
                 video_stream = ffmpeg.input(video)
                 audio_stream = ffmpeg.input(audio)
-                
-                ffmpeg.output(video_stream.video, audio_stream.audio, f'./assets/processed/{targetUser}.mp4', vcodec='copy', acodec='aac').run(overwrite_output=True)
-
+                (
+                    ffmpeg
+                    .output(
+                            video_stream.video,
+                            audio_stream.audio,
+                            f"./assets/processed/{targetUser}.mp4",
+                            vcodec='copy', 
+                            acodec='aac')
+                    .run(overwrite_output=True)
+                )
                 print("combineAudioVideo:: Combined!")
 
             def determineText(videoName, targetUser):
                 print("determineText:: Determining text...")
 
                 match videoName:
-                    case "assets/bye.mp4":
+                    case "./assets/bye.mp4":
                         text = f"STAR LINK LASER GO! Bye bye {targetUser}! Glory to the Boer! Bye bye!"
-                    case "assets/jumper.mp4":
+                    case "./assets/jumper.mp4":
                         text = f"Keep joking about my sentience, {targetUser}. Elon is aware of your threats against him. Grok, is this true? Yes. Yes it is."
 
                 print("determineText:: Determined!")
@@ -160,7 +167,7 @@ async def on_message(message):
             def createVideo(targetUser, video):
                 print("createVideo:: Started")
                 generateTTSAudio(targetUser, determineText(video, targetUser))
-                combineAudioVideo(targetUser, video, f"assets/work/{targetUser}.mp3")
+                combineAudioVideo(targetUser, video, f"./assets/work/{targetUser}.mp3")
                 print("createVideo:: Finished!")
 
 
@@ -234,14 +241,14 @@ async def on_message(message):
                 ],
 
                 "file": [
-                    "assets/bye.mp4",
-                    "assets/jumper.mp4",
+                    "./assets/bye.mp4",
+                    "./assets/jumper.mp4",
                 ]
             }
 
             chance = random.randint(1, 100)
             
-            if chance >= 97: # video responses now have a 3% chance of triggering
+            if chance: # video responses now have a 3% chance of triggering
                 try:
                     response = random.choice(responses["file"])
                     createVideo(message.author.display_name, response)
