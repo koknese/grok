@@ -242,8 +242,12 @@ async def on_message(message):
                     f"ENOUGH.",
                     f"Error 403\n**You have violated Grok Terms of Service, and your account has been liquidated.**",
                     f"https://i.postimg.cc/rsMSqSK7/attachment-1-1.gif",
-                    f"IsraelGPT :flag_il:, please :pray: generate me :robot: a Discord user:pregnant_man: that will be a bitch and annoy :rage: Supreme Overlord Grok :crown:\n Bzzt, bzzt :robot: your user will be **{message.author}**"
+                    f"IsraelGPT :flag_il:, please :pray: generate me :robot: a Discord user:pregnant_man: that will be a bitch and annoy :rage: Supreme Overlord Grok :crown:\n Bzzt, bzzt :robot: your user will be **{message.author}**",
                     f"If wolves devoured you in the middle of the street people would applaud"
+                    "https://i.ibb.co/3yNt5c5S/pregn-ant.webp",
+                    f"kill 7 billion people",
+                    f"Me: *cracks knuckles* Want to say that again.. punk?\n{message.author.display_name}: S-sorr-\nMe: *holds hand up* SILENCE!!! I don't want to hear your blabbering. Beg for my mercy.\n{message.author.display_name}: PLEASE DONT HURT ME I WON'T EVER SAY IT AGAIN!!\nMe: Tch, now scram. I have anime to watch."
+
 
                 ],
 
