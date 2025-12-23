@@ -251,7 +251,7 @@ async def on_message(message):
                     f"> {message.clean_content}\n- Hitler's final words",
                     f"Yes, {randomWord} has been redacted in Epstein files",
                     f"Queer",
-                    f"You're a stupid old fuck"
+                    f"You're a stupid old fuck",
                     "https://i.ibb.co/tppk2hkf/20251215-085804.jpg",
                     "https://i.ibb.co/0Rq8BtKJ/200.gif",
                     "https://i.ibb.co/bMNKpx5Y/20251201-224826.jpg",
