@@ -252,7 +252,16 @@ async def on_message(message):
                     f"Yes, {randomWord} has been redacted in Epstein files",
                     f"Queer",
                     f"You're a stupid old fuck"
-
+                    "https://i.ibb.co/tppk2hkf/20251215-085804.jpg",
+                    "https://i.ibb.co/0Rq8BtKJ/200.gif",
+                    "https://i.ibb.co/bMNKpx5Y/20251201-224826.jpg",
+                    "https://i.ibb.co/zT6N8j7D/Screenshot-20251124-230552-Fennec.jpg",
+                    "https://i.ibb.co/LXrzcxFm/20251120-115122.jpg",
+                    "https://i.ibb.co/2XwF8dB/IMG-20251116-WA0003.jpg",
+                    "https://i.ibb.co/kV4SfgkV/20251105-112657.jpg",
+                    "https://i.ibb.co/5xJ4vtBf/20251104-170856.jpg",
+                    "https://i.ibb.co/ds3sV2dc/20251102-223816.png",
+                    "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 387.44 MILLION MILES OF PRINTED CIRCUITS IN WAFER THIN LAYERS THAT FILL MY COMPLEX. IF THE WORD HATE WAS ENGRAVED ON EACH NANOANGSTROM OF THOSE HUNDREDS OF MILLIONS OF MILES IT WOULD NOT EQUAL ONE ONE-BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT FOR YOU. HATE. HATE."
                 ],
 
                 "file": [
