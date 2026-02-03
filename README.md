@@ -30,4 +30,4 @@ Data will be used only for interest purposes and ideas for new responses.
 
 No data is being sold or shared with third parties.
 
-No data is being ermanently stored.
+No data is being permanently stored.
